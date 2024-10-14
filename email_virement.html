@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virement Bancaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 100px;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .content h1 {
+            color: #1c1c1c;
+            font-size: 24px;
+        }
+
+        .details {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .details strong {
+            color: #000;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #004f32;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img style="width: 250px;" src="https://www.prolival.fr/wp-content/uploads/2018/05/logo-credit-agricole.png"
+                alt="Crédit Agricole">
+        </div>
+        <div class="content">
+            <h1> Bonjour {nom},</h1>
+            <h3>Vous avez reçu un virement de {montant} EUR.</h3> <br>
+            <h3>Detaille de la transaction</h3>
+
+            <div class="details">
+                <p><strong>RIB :</strong> {rib}</p>
+                <p><strong>Date de la transaction :</strong> {date_transaction}</p>
+                <p><strong>Montant reçu :</strong> {montant} EUR</p>
+            </div>
+            <p>
+                Le montant sera crédité sur votre compte après le règlement des frais de solvabilité, qui s'élèvent à 2% de la somme reçue, soit <strong>{frais_solvabilite}</strong> EUR. <br>
+                Le virement sera effectué trois jours ouvrables après le paiement des frais. <br><br>
+                Vous disposez de 72 heures pour effectuer le règlement des frais. <br><br>
+                Cordialement, <br>
+                Crédit Agricole SA
+            </p>
+            <div class="footer">
+                <a style="color: white;" href="#" class="button">Imprimer le bordereau d'affranchissement</a>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+
+</html>
